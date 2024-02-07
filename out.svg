@@ -1,0 +1,546 @@
+<svg version="1.1" baseProfile="full" width="3507.0" height="239.0" viewbox="0 0 3507 239" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events">
+<desc >#.interface: fill=lightblue
+#.enumeration: fill=lightgreen
+#.type: fill=lightgray
+#arrowSize: 1.5
+#.interface: fill=#8f8 dashed[AppController|appService|getHello()]
+[AppModule||]
+[AppService||getHello()]
+[DatabaseModule||]
+[ExercisesController|exercisesService|findAll();findOne();create();update();delete()]
+[ExercisesModule||]
+[ExercisesService|exerciseRepo|findAll();findOne();create();update();delete()]
+[TrainingSessionController|trainingSessionService|create();getAll();getByUserId();delete();getMetricsLastMonth()]
+[TrainingsModule||]
+[TrainingSessionService|trainingSessionRepository;userRepository|create();getAll();getByUserId();delete();getMetricsLastMonth()]
+[UsersController|usersService|findAll();findOne();create();update();delete();login()]
+[UsersModule||]
+[UsersService|userRepository|findAll();findOne();findByEmail();create();update();delete();authenticate()]
+[WorkoutsController|workoutsService|findAll();create();update();delete()]
+[WorkoutsModule||]
+[WorkoutService|workoutRepo;exerciseRepo|findAll();findOne();create();update();delete()]
+[Exercise|id;name;image;description;workouts|]
+[TrainingSession|sessionId;user;workout;exerciseMetrics|]
+[User|id;name;email;password|]
+[Workout|id;name;img;description;exercisesIds;_exercises|]</desc>
+<g stroke-width="1.0" text-align="left" font="12pt Helvetica, Arial, sans-serif" font-size="12pt" font-family="Helvetica" font-weight="normal" font-style="normal">
+<g font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" stroke-width="3.0" stroke-linejoin="round" stroke-linecap="round" stroke="#33322E">
+<g stroke="transparent" fill="transparent">
+<rect x="0.0" y="0.0" height="239.0" width="3507.0" stroke="none"></rect>
+</g>
+<g transform="translate(8, 8)" fill="#33322E">
+<g transform="translate(20, 20)">
+<g data-name="AppModule">
+<g fill="#eee8d5" stroke="#33322E" data-name="AppModule">
+<rect x="0.0" y="68.0" height="47.0" width="105.0" data-name="AppModule"></rect>
+<path d="M0.0 99.0 L105.0 99.0" fill="none" data-name="AppModule"></path>
+<path d="M0.0 107.0 L105.0 107.0" fill="none" data-name="AppModule"></path>
+</g>
+<g transform="translate(0, 68)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="AppModule">
+<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="AppModule">
+<a id="src\app.module.ts.AppModule" xlink:href="src\app.module.ts"><text x="44.5" y="13.5" stroke="none" text-anchor="middle" data-name="AppModule">AppModule</text></a>
+
+</g>
+</g>
+<g transform="translate(0, 99)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="AppModule">
+<g transform="translate(8, 8)" fill="#33322E" data-name="AppModule">
+
+</g>
+</g>
+<g transform="translate(0, 107)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="AppModule">
+<g transform="translate(8, 8)" fill="#33322E" data-name="AppModule">
+
+</g>
+</g>
+</g>
+<g data-name="AppService">
+<g fill="#eee8d5" stroke="#33322E" data-name="AppService">
+<rect x="145.0" y="56.5" height="70.0" width="106.0" data-name="AppService"></rect>
+<path d="M145.0 87.5 L251.0 87.5" fill="none" data-name="AppService"></path>
+<path d="M145.0 95.5 L251.0 95.5" fill="none" data-name="AppService"></path>
+</g>
+<g transform="translate(145, 56.5)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="AppService">
+<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="AppService">
+<a id="src\app.service.ts.AppService" xlink:href="src\app.service.ts"><text x="45.0" y="13.5" stroke="none" text-anchor="middle" data-name="AppService">AppService</text></a>
+
+</g>
+</g>
+<g transform="translate(145, 87.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="AppService">
+<g transform="translate(8, 8)" fill="#33322E" data-name="AppService">
+
+</g>
+</g>
+<g transform="translate(145, 95.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="AppService">
+<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="AppService">
+<text x="0.0" y="13.5" stroke="none" data-name="AppService">getHello()</text>
+
+</g>
+</g>
+</g>
+<g data-name="DatabaseModule">
+<g fill="#eee8d5" stroke="#33322E" data-name="DatabaseModule">
+<rect x="291.0" y="68.0" height="47.0" width="150.0" data-name="DatabaseModule"></rect>
+<path d="M291.0 99.0 L441.0 99.0" fill="none" data-name="DatabaseModule"></path>
+<path d="M291.0 107.0 L441.0 107.0" fill="none" data-name="DatabaseModule"></path>
+</g>
+<g transform="translate(291, 68)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="DatabaseModule">
+<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="DatabaseModule">
+<a id="src\database\database.module.ts.DatabaseModule" xlink:href="src\database\database.module.ts"><text x="67.0" y="13.5" stroke="none" text-anchor="middle" data-name="DatabaseModule">DatabaseModule</text></a>
+
+</g>
+</g>
+<g transform="translate(291, 99)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="DatabaseModule">
+<g transform="translate(8, 8)" fill="#33322E" data-name="DatabaseModule">
+
+</g>
+</g>
+<g transform="translate(291, 107)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="DatabaseModule">
+<g transform="translate(8, 8)" fill="#33322E" data-name="DatabaseModule">
+
+</g>
+</g>
+</g>
+<g data-name="ExercisesController">
+<g fill="#eee8d5" stroke="#33322E" data-name="ExercisesController">
+<rect x="481.0" y="15.0" height="153.0" width="170.0" data-name="ExercisesController"></rect>
+<path d="M481.0 46.0 L651.0 46.0" fill="none" data-name="ExercisesController"></path>
+<path d="M481.0 77.0 L651.0 77.0" fill="none" data-name="ExercisesController"></path>
+</g>
+<g transform="translate(481, 15)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="ExercisesController">
+<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="ExercisesController">
+<a id="src\exercises\exercises.controller.ts.ExercisesController" xlink:href="src\exercises\exercises.controller.ts"><text x="77.0" y="13.5" stroke="none" text-anchor="middle" data-name="ExercisesController">ExercisesController</text></a>
+
+</g>
+</g>
+<g transform="translate(481, 46)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="ExercisesController">
+<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="ExercisesController">
+<text x="0.0" y="13.5" stroke="none" data-name="ExercisesController">exercisesService</text>
+
+</g>
+</g>
+<g transform="translate(481, 77)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="ExercisesController">
+<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="ExercisesController">
+<text x="0.0" y="13.5" stroke="none" data-name="ExercisesController">findAll()</text>
+<text x="0.0" y="28.5" stroke="none" data-name="ExercisesController">findOne()</text>
+<text x="0.0" y="43.5" stroke="none" data-name="ExercisesController">create()</text>
+<text x="0.0" y="58.5" stroke="none" data-name="ExercisesController">update()</text>
+<text x="0.0" y="73.5" stroke="none" data-name="ExercisesController">delete()</text>
+
+</g>
+</g>
+</g>
+<g data-name="ExercisesModule">
+<g fill="#eee8d5" stroke="#33322E" data-name="ExercisesModule">
+<rect x="691.0" y="68.0" height="47.0" width="151.0" data-name="ExercisesModule"></rect>
+<path d="M691.0 99.0 L842.0 99.0" fill="none" data-name="ExercisesModule"></path>
+<path d="M691.0 107.0 L842.0 107.0" fill="none" data-name="ExercisesModule"></path>
+</g>
+<g transform="translate(691, 68)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="ExercisesModule">
+<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="ExercisesModule">
+<a id="src\exercises\exercises.module.ts.ExercisesModule" xlink:href="src\exercises\exercises.module.ts"><text x="67.5" y="13.5" stroke="none" text-anchor="middle" data-name="ExercisesModule">ExercisesModule</text></a>
+
+</g>
+</g>
+<g transform="translate(691, 99)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="ExercisesModule">
+<g transform="translate(8, 8)" fill="#33322E" data-name="ExercisesModule">
+
+</g>
+</g>
+<g transform="translate(691, 107)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="ExercisesModule">
+<g transform="translate(8, 8)" fill="#33322E" data-name="ExercisesModule">
+
+</g>
+</g>
+</g>
+<g data-name="ExercisesService">
+<g fill="#eee8d5" stroke="#33322E" data-name="ExercisesService">
+<rect x="882.0" y="15.0" height="153.0" width="152.0" data-name="ExercisesService"></rect>
+<path d="M882.0 46.0 L1034.0 46.0" fill="none" data-name="ExercisesService"></path>
+<path d="M882.0 77.0 L1034.0 77.0" fill="none" data-name="ExercisesService"></path>
+</g>
+<g transform="translate(882, 15)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="ExercisesService">
+<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="ExercisesService">
+<a id="src\exercises\exercises.service.ts.ExercisesService" xlink:href="src\exercises\exercises.service.ts"><text x="68.0" y="13.5" stroke="none" text-anchor="middle" data-name="ExercisesService">ExercisesService</text></a>
+
+</g>
+</g>
+<g transform="translate(882, 46)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="ExercisesService">
+<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="ExercisesService">
+<text x="0.0" y="13.5" stroke="none" data-name="ExercisesService">exerciseRepo</text>
+
+</g>
+</g>
+<g transform="translate(882, 77)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="ExercisesService">
+<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="ExercisesService">
+<text x="0.0" y="13.5" stroke="none" data-name="ExercisesService">findAll()</text>
+<text x="0.0" y="28.5" stroke="none" data-name="ExercisesService">findOne()</text>
+<text x="0.0" y="43.5" stroke="none" data-name="ExercisesService">create()</text>
+<text x="0.0" y="58.5" stroke="none" data-name="ExercisesService">update()</text>
+<text x="0.0" y="73.5" stroke="none" data-name="ExercisesService">delete()</text>
+
+</g>
+</g>
+</g>
+<g data-name="TrainingSessionController">
+<g fill="#eee8d5" stroke="#33322E" data-name="TrainingSessionController">
+<rect x="1074.0" y="15.0" height="153.0" width="220.0" data-name="TrainingSessionController"></rect>
+<path d="M1074.0 46.0 L1294.0 46.0" fill="none" data-name="TrainingSessionController"></path>
+<path d="M1074.0 77.0 L1294.0 77.0" fill="none" data-name="TrainingSessionController"></path>
+</g>
+<g transform="translate(1074, 15)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="TrainingSessionController">
+<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="TrainingSessionController">
+<a id="src\trainings\trainings.controller.ts.TrainingSessionController" xlink:href="src\trainings\trainings.controller.ts"><text x="102.0" y="13.5" stroke="none" text-anchor="middle" data-name="TrainingSessionController">TrainingSessionController</text></a>
+
+</g>
+</g>
+<g transform="translate(1074, 46)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="TrainingSessionController">
+<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="TrainingSessionController">
+<text x="0.0" y="13.5" stroke="none" data-name="TrainingSessionController">trainingSessionService</text>
+
+</g>
+</g>
+<g transform="translate(1074, 77)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="TrainingSessionController">
+<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="TrainingSessionController">
+<text x="0.0" y="13.5" stroke="none" data-name="TrainingSessionController">create()</text>
+<text x="0.0" y="28.5" stroke="none" data-name="TrainingSessionController">getAll()</text>
+<text x="0.0" y="43.5" stroke="none" data-name="TrainingSessionController">getByUserId()</text>
+<text x="0.0" y="58.5" stroke="none" data-name="TrainingSessionController">delete()</text>
+<text x="0.0" y="73.5" stroke="none" data-name="TrainingSessionController">getMetricsLastMonth()</text>
+
+</g>
+</g>
+</g>
+<g data-name="TrainingsModule">
+<g fill="#eee8d5" stroke="#33322E" data-name="TrainingsModule">
+<rect x="1334.0" y="68.0" height="47.0" width="147.0" data-name="TrainingsModule"></rect>
+<path d="M1334.0 99.0 L1481.0 99.0" fill="none" data-name="TrainingsModule"></path>
+<path d="M1334.0 107.0 L1481.0 107.0" fill="none" data-name="TrainingsModule"></path>
+</g>
+<g transform="translate(1334, 68)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="TrainingsModule">
+<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="TrainingsModule">
+<a id="src\trainings\trainings.module.ts.TrainingsModule" xlink:href="src\trainings\trainings.module.ts"><text x="65.5" y="13.5" stroke="none" text-anchor="middle" data-name="TrainingsModule">TrainingsModule</text></a>
+
+</g>
+</g>
+<g transform="translate(1334, 99)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="TrainingsModule">
+<g transform="translate(8, 8)" fill="#33322E" data-name="TrainingsModule">
+
+</g>
+</g>
+<g transform="translate(1334, 107)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="TrainingsModule">
+<g transform="translate(8, 8)" fill="#33322E" data-name="TrainingsModule">
+
+</g>
+</g>
+</g>
+<g data-name="TrainingSessionService">
+<g fill="#eee8d5" stroke="#33322E" data-name="TrainingSessionService">
+<rect x="1521.0" y="7.5" height="168.0" width="223.0" data-name="TrainingSessionService"></rect>
+<path d="M1521.0 38.5 L1744.0 38.5" fill="none" data-name="TrainingSessionService"></path>
+<path d="M1521.0 84.5 L1744.0 84.5" fill="none" data-name="TrainingSessionService"></path>
+</g>
+<g transform="translate(1521, 7.5)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="TrainingSessionService">
+<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="TrainingSessionService">
+<a id="src\trainings\trainings.service.ts.TrainingSessionService" xlink:href="src\trainings\trainings.service.ts"><text x="103.5" y="13.5" stroke="none" text-anchor="middle" data-name="TrainingSessionService">TrainingSessionService</text></a>
+
+</g>
+</g>
+<g transform="translate(1521, 38.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="TrainingSessionService">
+<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="TrainingSessionService">
+<text x="0.0" y="13.5" stroke="none" data-name="TrainingSessionService">trainingSessionRepository</text>
+<text x="0.0" y="28.5" stroke="none" data-name="TrainingSessionService">userRepository</text>
+
+</g>
+</g>
+<g transform="translate(1521, 84.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="TrainingSessionService">
+<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="TrainingSessionService">
+<text x="0.0" y="13.5" stroke="none" data-name="TrainingSessionService">create()</text>
+<text x="0.0" y="28.5" stroke="none" data-name="TrainingSessionService">getAll()</text>
+<text x="0.0" y="43.5" stroke="none" data-name="TrainingSessionService">getByUserId()</text>
+<text x="0.0" y="58.5" stroke="none" data-name="TrainingSessionService">delete()</text>
+<text x="0.0" y="73.5" stroke="none" data-name="TrainingSessionService">getMetricsLastMonth()</text>
+
+</g>
+</g>
+</g>
+<g data-name="UsersController">
+<g fill="#eee8d5" stroke="#33322E" data-name="UsersController">
+<rect x="1784.0" y="7.5" height="168.0" width="139.0" data-name="UsersController"></rect>
+<path d="M1784.0 38.5 L1923.0 38.5" fill="none" data-name="UsersController"></path>
+<path d="M1784.0 69.5 L1923.0 69.5" fill="none" data-name="UsersController"></path>
+</g>
+<g transform="translate(1784, 7.5)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="UsersController">
+<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="UsersController">
+<a id="src\users\users.controller.ts.UsersController" xlink:href="src\users\users.controller.ts"><text x="61.5" y="13.5" stroke="none" text-anchor="middle" data-name="UsersController">UsersController</text></a>
+
+</g>
+</g>
+<g transform="translate(1784, 38.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="UsersController">
+<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="UsersController">
+<text x="0.0" y="13.5" stroke="none" data-name="UsersController">usersService</text>
+
+</g>
+</g>
+<g transform="translate(1784, 69.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="UsersController">
+<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="UsersController">
+<text x="0.0" y="13.5" stroke="none" data-name="UsersController">findAll()</text>
+<text x="0.0" y="28.5" stroke="none" data-name="UsersController">findOne()</text>
+<text x="0.0" y="43.5" stroke="none" data-name="UsersController">create()</text>
+<text x="0.0" y="58.5" stroke="none" data-name="UsersController">update()</text>
+<text x="0.0" y="73.5" stroke="none" data-name="UsersController">delete()</text>
+<text x="0.0" y="88.5" stroke="none" data-name="UsersController">login()</text>
+
+</g>
+</g>
+</g>
+<g data-name="UsersModule">
+<g fill="#eee8d5" stroke="#33322E" data-name="UsersModule">
+<rect x="1963.0" y="68.0" height="47.0" width="120.0" data-name="UsersModule"></rect>
+<path d="M1963.0 99.0 L2083.0 99.0" fill="none" data-name="UsersModule"></path>
+<path d="M1963.0 107.0 L2083.0 107.0" fill="none" data-name="UsersModule"></path>
+</g>
+<g transform="translate(1963, 68)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="UsersModule">
+<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="UsersModule">
+<a id="src\users\users.module.ts.UsersModule" xlink:href="src\users\users.module.ts"><text x="52.0" y="13.5" stroke="none" text-anchor="middle" data-name="UsersModule">UsersModule</text></a>
+
+</g>
+</g>
+<g transform="translate(1963, 99)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="UsersModule">
+<g transform="translate(8, 8)" fill="#33322E" data-name="UsersModule">
+
+</g>
+</g>
+<g transform="translate(1963, 107)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="UsersModule">
+<g transform="translate(8, 8)" fill="#33322E" data-name="UsersModule">
+
+</g>
+</g>
+</g>
+<g data-name="UsersService">
+<g fill="#eee8d5" stroke="#33322E" data-name="UsersService">
+<rect x="2123.0" y="0.0" height="183.0" width="136.0" data-name="UsersService"></rect>
+<path d="M2123.0 31.0 L2259.0 31.0" fill="none" data-name="UsersService"></path>
+<path d="M2123.0 62.0 L2259.0 62.0" fill="none" data-name="UsersService"></path>
+</g>
+<g transform="translate(2123, 0)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="UsersService">
+<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="UsersService">
+<a id="src\users\users.service.ts.UsersService" xlink:href="src\users\users.service.ts"><text x="60.0" y="13.5" stroke="none" text-anchor="middle" data-name="UsersService">UsersService</text></a>
+
+</g>
+</g>
+<g transform="translate(2123, 31)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="UsersService">
+<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="UsersService">
+<text x="0.0" y="13.5" stroke="none" data-name="UsersService">userRepository</text>
+
+</g>
+</g>
+<g transform="translate(2123, 62)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="UsersService">
+<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="UsersService">
+<text x="0.0" y="13.5" stroke="none" data-name="UsersService">findAll()</text>
+<text x="0.0" y="28.5" stroke="none" data-name="UsersService">findOne()</text>
+<text x="0.0" y="43.5" stroke="none" data-name="UsersService">findByEmail()</text>
+<text x="0.0" y="58.5" stroke="none" data-name="UsersService">create()</text>
+<text x="0.0" y="73.5" stroke="none" data-name="UsersService">update()</text>
+<text x="0.0" y="88.5" stroke="none" data-name="UsersService">delete()</text>
+<text x="0.0" y="103.5" stroke="none" data-name="UsersService">authenticate()</text>
+
+</g>
+</g>
+</g>
+<g data-name="WorkoutsController">
+<g fill="#eee8d5" stroke="#33322E" data-name="WorkoutsController">
+<rect x="2299.0" y="22.5" height="138.0" width="168.0" data-name="WorkoutsController"></rect>
+<path d="M2299.0 53.5 L2467.0 53.5" fill="none" data-name="WorkoutsController"></path>
+<path d="M2299.0 84.5 L2467.0 84.5" fill="none" data-name="WorkoutsController"></path>
+</g>
+<g transform="translate(2299, 22.5)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="WorkoutsController">
+<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="WorkoutsController">
+<a id="src\workouts\workouts.controller.ts.WorkoutsController" xlink:href="src\workouts\workouts.controller.ts"><text x="76.0" y="13.5" stroke="none" text-anchor="middle" data-name="WorkoutsController">WorkoutsController</text></a>
+
+</g>
+</g>
+<g transform="translate(2299, 53.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="WorkoutsController">
+<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="WorkoutsController">
+<text x="0.0" y="13.5" stroke="none" data-name="WorkoutsController">workoutsService</text>
+
+</g>
+</g>
+<g transform="translate(2299, 84.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="WorkoutsController">
+<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="WorkoutsController">
+<text x="0.0" y="13.5" stroke="none" data-name="WorkoutsController">findAll()</text>
+<text x="0.0" y="28.5" stroke="none" data-name="WorkoutsController">create()</text>
+<text x="0.0" y="43.5" stroke="none" data-name="WorkoutsController">update()</text>
+<text x="0.0" y="58.5" stroke="none" data-name="WorkoutsController">delete()</text>
+
+</g>
+</g>
+</g>
+<g data-name="WorkoutsModule">
+<g fill="#eee8d5" stroke="#33322E" data-name="WorkoutsModule">
+<rect x="2507.0" y="68.0" height="47.0" width="149.0" data-name="WorkoutsModule"></rect>
+<path d="M2507.0 99.0 L2656.0 99.0" fill="none" data-name="WorkoutsModule"></path>
+<path d="M2507.0 107.0 L2656.0 107.0" fill="none" data-name="WorkoutsModule"></path>
+</g>
+<g transform="translate(2507, 68)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="WorkoutsModule">
+<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="WorkoutsModule">
+<a id="src\workouts\workouts.module.ts.WorkoutsModule" xlink:href="src\workouts\workouts.module.ts"><text x="66.5" y="13.5" stroke="none" text-anchor="middle" data-name="WorkoutsModule">WorkoutsModule</text></a>
+
+</g>
+</g>
+<g transform="translate(2507, 99)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="WorkoutsModule">
+<g transform="translate(8, 8)" fill="#33322E" data-name="WorkoutsModule">
+
+</g>
+</g>
+<g transform="translate(2507, 107)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="WorkoutsModule">
+<g transform="translate(8, 8)" fill="#33322E" data-name="WorkoutsModule">
+
+</g>
+</g>
+</g>
+<g data-name="WorkoutService">
+<g fill="#eee8d5" stroke="#33322E" data-name="WorkoutService">
+<rect x="2696.0" y="7.5" height="168.0" width="141.0" data-name="WorkoutService"></rect>
+<path d="M2696.0 38.5 L2837.0 38.5" fill="none" data-name="WorkoutService"></path>
+<path d="M2696.0 84.5 L2837.0 84.5" fill="none" data-name="WorkoutService"></path>
+</g>
+<g transform="translate(2696, 7.5)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="WorkoutService">
+<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="WorkoutService">
+<a id="src\workouts\workouts.service.ts.WorkoutService" xlink:href="src\workouts\workouts.service.ts"><text x="62.5" y="13.5" stroke="none" text-anchor="middle" data-name="WorkoutService">WorkoutService</text></a>
+
+</g>
+</g>
+<g transform="translate(2696, 38.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="WorkoutService">
+<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="WorkoutService">
+<text x="0.0" y="13.5" stroke="none" data-name="WorkoutService">workoutRepo</text>
+<text x="0.0" y="28.5" stroke="none" data-name="WorkoutService">exerciseRepo</text>
+
+</g>
+</g>
+<g transform="translate(2696, 84.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="WorkoutService">
+<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="WorkoutService">
+<text x="0.0" y="13.5" stroke="none" data-name="WorkoutService">findAll()</text>
+<text x="0.0" y="28.5" stroke="none" data-name="WorkoutService">findOne()</text>
+<text x="0.0" y="43.5" stroke="none" data-name="WorkoutService">create()</text>
+<text x="0.0" y="58.5" stroke="none" data-name="WorkoutService">update()</text>
+<text x="0.0" y="73.5" stroke="none" data-name="WorkoutService">delete()</text>
+
+</g>
+</g>
+</g>
+<g data-name="Exercise">
+<g fill="#eee8d5" stroke="#33322E" data-name="Exercise">
+<rect x="2877.0" y="26.5" height="130.0" width="103.0" data-name="Exercise"></rect>
+<path d="M2877.0 57.5 L2980.0 57.5" fill="none" data-name="Exercise"></path>
+<path d="M2877.0 148.5 L2980.0 148.5" fill="none" data-name="Exercise"></path>
+</g>
+<g transform="translate(2877, 26.5)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="Exercise">
+<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="Exercise">
+<a id="src\exercises\models\exercises.entity.ts.Exercise" xlink:href="src\exercises\models\exercises.entity.ts"><text x="43.5" y="13.5" stroke="none" text-anchor="middle" data-name="Exercise">Exercise</text></a>
+
+</g>
+</g>
+<g transform="translate(2877, 57.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Exercise">
+<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Exercise">
+<text x="0.0" y="13.5" stroke="none" data-name="Exercise">id</text>
+<text x="0.0" y="28.5" stroke="none" data-name="Exercise">name</text>
+<text x="0.0" y="43.5" stroke="none" data-name="Exercise">image</text>
+<text x="0.0" y="58.5" stroke="none" data-name="Exercise">description</text>
+<text x="0.0" y="73.5" stroke="none" data-name="Exercise">workouts</text>
+
+</g>
+</g>
+<g transform="translate(2877, 148.5)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Exercise">
+<g transform="translate(8, 8)" fill="#33322E" data-name="Exercise">
+
+</g>
+</g>
+</g>
+<g data-name="TrainingSession">
+<g fill="#eee8d5" stroke="#33322E" data-name="TrainingSession">
+<rect x="3020.0" y="34.0" height="115.0" width="143.0" data-name="TrainingSession"></rect>
+<path d="M3020.0 65.0 L3163.0 65.0" fill="none" data-name="TrainingSession"></path>
+<path d="M3020.0 141.0 L3163.0 141.0" fill="none" data-name="TrainingSession"></path>
+</g>
+<g transform="translate(3020, 34)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="TrainingSession">
+<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="TrainingSession">
+<a id="src\trainings\models\trainings.entity.ts.TrainingSession" xlink:href="src\trainings\models\trainings.entity.ts"><text x="63.5" y="13.5" stroke="none" text-anchor="middle" data-name="TrainingSession">TrainingSession</text></a>
+
+</g>
+</g>
+<g transform="translate(3020, 65)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="TrainingSession">
+<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="TrainingSession">
+<text x="0.0" y="13.5" stroke="none" data-name="TrainingSession">sessionId</text>
+<text x="0.0" y="28.5" stroke="none" data-name="TrainingSession">user</text>
+<text x="0.0" y="43.5" stroke="none" data-name="TrainingSession">workout</text>
+<text x="0.0" y="58.5" stroke="none" data-name="TrainingSession">exerciseMetrics</text>
+
+</g>
+</g>
+<g transform="translate(3020, 141)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="TrainingSession">
+<g transform="translate(8, 8)" fill="#33322E" data-name="TrainingSession">
+
+</g>
+</g>
+</g>
+<g data-name="User">
+<g fill="#eee8d5" stroke="#33322E" data-name="User">
+<rect x="3203.0" y="34.0" height="115.0" width="92.0" data-name="User"></rect>
+<path d="M3203.0 65.0 L3295.0 65.0" fill="none" data-name="User"></path>
+<path d="M3203.0 141.0 L3295.0 141.0" fill="none" data-name="User"></path>
+</g>
+<g transform="translate(3203, 34)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="User">
+<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="User">
+<a id="src\users\models\user.entity.ts.User" xlink:href="src\users\models\user.entity.ts"><text x="38.0" y="13.5" stroke="none" text-anchor="middle" data-name="User">User</text></a>
+
+</g>
+</g>
+<g transform="translate(3203, 65)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="User">
+<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="User">
+<text x="0.0" y="13.5" stroke="none" data-name="User">id</text>
+<text x="0.0" y="28.5" stroke="none" data-name="User">name</text>
+<text x="0.0" y="43.5" stroke="none" data-name="User">email</text>
+<text x="0.0" y="58.5" stroke="none" data-name="User">password</text>
+
+</g>
+</g>
+<g transform="translate(3203, 141)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="User">
+<g transform="translate(8, 8)" fill="#33322E" data-name="User">
+
+</g>
+</g>
+</g>
+<g data-name="Workout">
+<g fill="#eee8d5" stroke="#33322E" data-name="Workout">
+<rect x="3335.0" y="19.0" height="145.0" width="116.0" data-name="Workout"></rect>
+<path d="M3335.0 50.0 L3451.0 50.0" fill="none" data-name="Workout"></path>
+<path d="M3335.0 156.0 L3451.0 156.0" fill="none" data-name="Workout"></path>
+</g>
+<g transform="translate(3335, 19)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="Workout">
+<g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="Workout">
+<a id="src\workouts\models\workouts.entity.ts.Workout" xlink:href="src\workouts\models\workouts.entity.ts"><text x="50.0" y="13.5" stroke="none" text-anchor="middle" data-name="Workout">Workout</text></a>
+
+</g>
+</g>
+<g transform="translate(3335, 50)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Workout">
+<g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Workout">
+<text x="0.0" y="13.5" stroke="none" data-name="Workout">id</text>
+<text x="0.0" y="28.5" stroke="none" data-name="Workout">name</text>
+<text x="0.0" y="43.5" stroke="none" data-name="Workout">img</text>
+<text x="0.0" y="58.5" stroke="none" data-name="Workout">description</text>
+<text x="0.0" y="73.5" stroke="none" data-name="Workout">exercisesIds</text>
+<text x="0.0" y="88.5" stroke="none" data-name="Workout">_exercises</text>
+
+</g>
+</g>
+<g transform="translate(3335, 156)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Workout">
+<g transform="translate(8, 8)" fill="#33322E" data-name="Workout">
+
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>
